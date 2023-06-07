@@ -1,0 +1,56 @@
+#macard-main{
+	width: 1280px;
+	background: #fff;
+	margin: 0 auto;
+	height: 600px;
+}
+
+div.mcard-gallery {
+  border: 1px solid #ccc;
+  width:240px;
+  background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                  0 1px 5px 0 rgba(0, 0, 0, 0.12),
+                  0 3px 1px -2px rgba(0, 0, 0, 0.2)
+}
+
+div.mcard-gallery:hover {
+   transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid #777;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+                  0  6px 30px 5px rgba(0, 0, 0, 0.12),
+                  0  8px 10px -5px rgba(0, 0, 0, 0.4);
+}
+div.mcard-gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 5px 10px;
+  text-align: left;
+}
+
+.mcard-responsive {
+  padding: 0 6px;
+  float: left;
+  width: 20%;
+  box-sizing: border-box;
+ 
+}
+@media only screen and (max-width: 700px) {
+  .mcard-responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .mcard-responsive {
+    width: 100%;
+  }
+}
+.macard-clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
